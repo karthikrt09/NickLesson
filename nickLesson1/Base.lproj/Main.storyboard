@@ -28,22 +28,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-Zu-olt">
-                                <rect key="frame" x="154.5" y="162" width="67" height="30"/>
+                                <rect key="frame" x="154" y="162" width="67" height="30"/>
                                 <state key="normal" title="PUSH ME"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7h-Zd-NOH"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEK-fC-90N">
+                                <rect key="frame" x="138" y="222" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9H0-UH-W7X"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9NL-BR-dOm">
+                                <rect key="frame" x="138" y="290" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sZq-GF-HJs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KVs-er-ujD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="0II-rr-TaU"/>
                             <constraint firstItem="yRu-Zu-olt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0pE-8q-JWA"/>
+                            <constraint firstItem="aEK-fC-90N" firstAttribute="top" secondItem="yRu-Zu-olt" secondAttribute="bottom" constant="30" id="1kT-Un-NX1"/>
                             <constraint firstItem="yRu-Zu-olt" firstAttribute="top" secondItem="KVs-er-ujD" secondAttribute="bottom" constant="41" id="ULn-gR-BOr"/>
+                            <constraint firstItem="9NL-BR-dOm" firstAttribute="top" secondItem="aEK-fC-90N" secondAttribute="bottom" constant="38" id="XUL-hI-URP"/>
                             <constraint firstItem="KVs-er-ujD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzg-WF-nDQ"/>
+                            <constraint firstItem="aEK-fC-90N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kJf-gn-bNk"/>
+                            <constraint firstItem="9NL-BR-dOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="un1-vZ-PK1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="aEK-fC-90N" id="gef-MH-jNZ"/>
+                        <outlet property="text2" destination="9NL-BR-dOm" id="bEq-2f-Dsg"/>
                         <outlet property="theLable" destination="KVs-er-ujD" id="mk1-mc-VLk"/>
                     </connections>
                 </viewController>

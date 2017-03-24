@@ -12,10 +12,22 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLable: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func buttonTapped(_ sender: Any) {
         
-        theLable.text = "Asma"
-        print("Test Button tapped")
+        let addition = true
+        
+        if addition{
+        theLable.text = "The Answer is \(Int(text1.text!)! + Int(text2.text!)!)"
+        }
+        else {
+            theLable.text = "The Answer is \(Int(text1.text!)! - Int(text2.text!)!)"
+
+        }
+        
     }
     
     override func viewDidLoad() {
